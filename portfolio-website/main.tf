@@ -5,10 +5,12 @@ provider "aws" {
 module "network" {
   source = "../modules/aws-network"
 
-  name                = var.name
+  name                = "vpc-${terraform.workspace}"
   vpc_cidr            = var.vpc_cidr
   public_subnet_cidrs = var.public_subnet_cidrs
   azs                 = var.azs
   create_igw          = var.create_igw
-  tags                = var.tags
+  tags = {
+    Project = "Portfolio-project-${terraform.workspace}"
+  }
 }

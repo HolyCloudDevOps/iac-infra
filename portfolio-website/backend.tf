@@ -4,7 +4,7 @@ terraform {
     organization = "hollydevops"
 
     workspaces {
-      name = "dev"
+      name    = "dev"
       project = "portfolio-website"
     }
   }

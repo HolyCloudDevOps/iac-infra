@@ -18,7 +18,7 @@ variable "azs" {
   type        = list(string)
 }
 
- variable "create_igw" {
+variable "create_igw" {
   description = "Whether to create an Internet Gateway"
   type        = bool
   default     = true
