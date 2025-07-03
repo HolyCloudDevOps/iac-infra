@@ -1,8 +1,3 @@
-variable "name" {
-  description = "Name prefix for resources"
-  type        = string
-}
-
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
   type        = string
@@ -22,10 +17,4 @@ variable "create_igw" {
   description = "Whether to create an Internet Gateway"
   type        = bool
   default     = true
-}
-
-variable "tags" {
-  description = "Map of tags to apply"
-  type        = map(string)
-  default     = {}
 }
