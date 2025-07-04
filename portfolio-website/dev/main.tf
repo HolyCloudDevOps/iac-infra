@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "network" {
-  source = "../modules/aws-network"
+  source = "../../modules/aws-network"
 
   name                = "vpc-${terraform.workspace}"
   vpc_cidr            = var.vpc_cidr
