@@ -12,6 +12,6 @@ module "network" {
   azs                 = var.azs
   create_igw          = var.create_igw
   tags = {
-    Project = "Portfolio-project-${terraform.workspace}"
+    Project = "Portfolio-project-test-${terraform.workspace}"
   }
 }
